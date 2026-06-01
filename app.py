@@ -35,12 +35,12 @@ if generate:
                                 "tone":tone
                             }
                         )
-            
+            st.subheader("Generated Content")
             st.write("Response Text:", response.json()["content"])
 
             st.success("Content Generated Successfully")
 
-            st.subheader("Generated Content")
+            
 
             
 
