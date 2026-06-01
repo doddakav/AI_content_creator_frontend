@@ -4,7 +4,7 @@ import requests
 api_url=st.secrets["api_url"]
 
 
-st.tittle("AI Content Creator")
+st.title("AI Content Creator")
 
 st.write("Generate Blogs, linkedin post, Captions, Email and more...")
 topic=st.text_input("Enter your Topic.")
