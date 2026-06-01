@@ -27,7 +27,7 @@ if generate:
         st.warning("please enter topic")
     else:
         with st.spinner("Generating Content..."):
-            res=requests.post(f"{api_url}/get_content",
+            response=requests.post(f"{api_url}/get_content",
                             params={
                                 "topic":topic,
                                 "technology":technology,
@@ -35,8 +35,8 @@ if generate:
                                 "tone":tone
                             }
                         )
-            st.write("Status Code:", res.status_code)
-            st.write("Response Text:", res.json()["content"])
+            st.write("Status Code:", response.status_code)
+            st.write("Response Text:", response.json()["content"])
 
             st.success("Content Generated Successfully")
 
