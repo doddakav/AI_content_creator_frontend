@@ -35,8 +35,8 @@ if generate:
                                 "tone":tone
                             }
                         )
-            st.write("Status Code:", response.status_code)
-            st.write("Response Text:", response.json()["content"])
+            st.write("Status Code:", res.status_code)
+            st.write("Response Text:", res.json()["content"])
 
             st.success("Content Generated Successfully")
 
